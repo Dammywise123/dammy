@@ -2,20 +2,65 @@
 <html>
 <head>
     <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Login Form</h2>
-
-<form action="login.php" method="post">
-    <label for="login_username">Username:</label>
-    <input type="text" id="login_username" name="login_username" required><br><br>
-    
-    <label for="login_password">Password:</label>
-    <input type="password" id="login_password" name="login_password" required><br><br>
-    
-    <input type="submit" value="Login">
-</form>
+<div class="container">
+    <h2>Login Form</h2>
+    <form action="login.php" method="post">
+        <label for="login_username">Username:</label>
+        <input type="text" id="login_username" name="login_username" required>
+        
+        <label for="login_password">Password:</label>
+        <input type="password" id="login_password" name="login_password" required>
+        
+        <input type="submit" value="Login">
+    </form>
+</div>
 
 </body>
 </html>
